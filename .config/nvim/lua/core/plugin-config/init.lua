@@ -1,0 +1,6 @@
+require('core.plugin-config.lualine')
+require('core.plugin-config.nvim-tree')
+require('core.plugin-config.nvim-web-devicons')
+require('core.plugin-config.onedark')
+require('core.plugin-config.telescope')
+require('core.plugin-config.treesitter')
