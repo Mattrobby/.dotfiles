@@ -5,7 +5,7 @@ alias la='exa --header --icons --grid --git --long --all -g'
 alias tree='exa --tree --icons --level=3'
 
 # dnf
-alias update='sudo dnf -y update; sudo dnf -y upgrade; sudo flatpak -y update'
+# alias update='sudo dnf update && sudo dnf upgrade ; flatpak update'
 alias remove='sudo dnf remove -y' 
 alias install='sudo dnf install -y'
 alias copy='xclip -sel c < '
