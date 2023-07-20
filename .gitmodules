@@ -4,3 +4,6 @@
 [submodule ".config/tmux/plugins/tmux-onedark-theme"]
 	path = .config/tmux/plugins/tmux-onedark-theme
 	url = https://github.com/odedlaz/tmux-onedark-theme
+[submodule ".config/tmux/plugins/tmux-sensible"]
+	path = .config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
