@@ -4,11 +4,23 @@ alias ll='exa --header --icons --grid --git --long -g'
 alias la='exa --header --icons --grid --git --long --all -g'
 alias tree='exa --tree --icons --level=3'
 
-# dnf
-# alias update='sudo dnf update && sudo dnf upgrade ; flatpak update'
-alias remove='sudo dnf remove -y' 
-alias install='sudo dnf install -y'
+# Package Manager
+alias remove='sudo pacman -Rns --noconfirm' 
+alias install='sudo pacman -S --noconfirm'
+alias aur='paru -S'
+alias yay='paru'
 alias copy='xclip -sel c < '
+
+update() {
+  echo '\n==> Updating Pacman\n'
+  sudo pacman -Syu
+
+  echo '\n==> Updating AUR\n'
+  paru -Syu
+
+  echo '\n==> Updating Flatpak\n'
+  flatpak update 
+}
 
 # Terminal text editor
 alias vim='nvim'
