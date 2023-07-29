@@ -12,14 +12,14 @@ alias yay='paru'
 alias copy='xclip -sel c < '
 
 update() {
-  echo '\n==> Updating Pacman\n'
-  sudo pacman -Syu
+  echo '\n======>  Updating Pacman <======\n'
+  sudo pacman -Syu --noconfirm
 
-  echo '\n==> Updating AUR\n'
-  paru -Syu
+  echo '\n======>   Updating AUR   <======\n'
+  paru -Syu --noconfirm
 
-  echo '\n==> Updating Flatpak\n'
-  flatpak update 
+  echo '\n======> Updating Flatpak <======\n'
+  flatpak update -y
 }
 
 # Terminal text editor
