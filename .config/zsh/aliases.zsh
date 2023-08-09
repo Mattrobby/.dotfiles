@@ -19,7 +19,7 @@ update() {
   paru -Syu --noconfirm
 
   echo '\n======> Updating Flatpak <======\n'
-  flatpak update -y
+  sudo flatpak update -y
 }
 
 # Terminal text editor
