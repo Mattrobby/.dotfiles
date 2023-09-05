@@ -1,5 +1,6 @@
 source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/path.zsh
+source /usr/share/nvm/init-nvm.sh
 
 neofetch
 

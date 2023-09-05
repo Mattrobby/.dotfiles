@@ -27,7 +27,11 @@ alias vim='nvim'
 alias vi='vim'
 alias v='nvim'
 
+# Tmux
+alias tmux-new='tmux new-session -s'
+
 # Python
+alias p='python3'
 alias venv='source .venv/bin/activate'
 
 # OneDrive
