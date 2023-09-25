@@ -1,8 +1,8 @@
-# Aliasing ls to exa
-alias ls='exa --header --icons --grid --git -g'
-alias ll='exa --header --icons --grid --git --long -g'
-alias la='exa --header --icons --grid --git --long --all -g'
-alias tree='exa --tree --icons --level=3'
+# Aliasing ls to eza
+alias ls='eza --header --icons --grid --git -g'
+alias ll='eza --header --icons --grid --git --long -g'
+alias la='eza --header --icons --grid --git --long --all -g'
+alias tree='eza --tree --icons --level=3'
 
 # Package Manager
 alias remove='sudo pacman -Rns --noconfirm' 
