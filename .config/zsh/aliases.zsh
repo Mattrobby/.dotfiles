@@ -24,11 +24,12 @@ update() {
 
 # Terminal text editor
 alias vim='nvim'
-alias vi='vim'
+alias vi='/bin/vim'
 alias v='nvim'
 
 # Tmux
 alias tmux-new='tmux new-session -s'
+alias tmux-attach='tmux a -t'
 
 # Python
 alias p='python3'
