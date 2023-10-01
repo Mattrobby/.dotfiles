@@ -14,4 +14,4 @@ vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
-vim.keymap.set('n', '<esc>', ':noh<CR>')
+vim.keymap.set('n', '<esc>', ':noh<CR>:echo ""<CR>', {noremap = true, silent = true})

@@ -2,4 +2,5 @@
 -- GitHub: https://github.com/nvim-tree/nvim-web-devicons
 require("nvim-tree").setup({})
 
-vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+

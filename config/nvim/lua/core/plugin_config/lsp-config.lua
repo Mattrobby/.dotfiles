@@ -21,7 +21,7 @@ require('mason-lspconfig').setup {
     'ltex',
     'lua_ls',
     'marksman',
-    'nil_ls',
+    'rnix',
     'perlnavigator',
     'pyright',
     'ruby_ls',
@@ -93,7 +93,7 @@ require('lspconfig').lua_ls.setup{
 require('lspconfig').marksman.setup{
   on_attach = on_attach
 }
-require('lspconfig').nil_ls.setup{
+require('lspconfig').rnix.setup{
   on_attach = on_attach
 }
 require('lspconfig').perlnavigator.setup{
