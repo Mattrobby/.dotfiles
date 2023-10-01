@@ -14,7 +14,7 @@ require('mason-lspconfig').setup {
     'dockerls',
     'gopls',
     'html',
-    'java_language_server',
+    'jdtls',
     'jqls',
     'jsonls',
     'lemminx',
@@ -41,7 +41,7 @@ local on_attach = function(_, _)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
   vim.keymap.set('gr', require('telescope.builtin').lsp_references, {})
-  vim.keymap.set('n', '<leader>K', vim.lsp.buf.hover, {})
+  vim.keymap.set('n', 'L', vim.lsp.buf.hover, {})
 end
 
 -- LSP Configuration
@@ -72,7 +72,7 @@ require('lspconfig').gopls.setup{
 require('lspconfig').html.setup{
   on_attach = on_attach
 }
-require('lspconfig').java_language_server.setup{
+require('lspconfig').jdtls.setup{
   on_attach = on_attach
 }
 require('lspconfig').jqls.setup{
