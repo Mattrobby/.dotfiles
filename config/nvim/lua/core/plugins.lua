@@ -13,12 +13,21 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- Basic Layout
+  -- Basic Features & Layout
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'navarasu/onedark.nvim',
   'nvim-treesitter/nvim-treesitter',
+  {
+    'numToStr/Comment.nvim',
+    lazy = false,
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {},
+  },
   {
     'akinsho/bufferline.nvim',
     version = "*",

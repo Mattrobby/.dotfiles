@@ -27,3 +27,8 @@ cmp.setup({
     { name = 'buffer' },
   })
 })
+
+cmp.event:on(
+  'confirm_done',
+  require('nvim-autopairs.completion.cmp').on_confirm_done()
+)
