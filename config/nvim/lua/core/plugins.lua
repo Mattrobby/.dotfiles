@@ -24,6 +24,10 @@ require("lazy").setup({
     lazy = false,
   },
   {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
+  {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {},
