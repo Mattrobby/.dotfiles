@@ -15,6 +15,7 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.keymap.set('n', '<esc>', ':noh<CR>:echo ""<CR>', {noremap = true, silent = true})
+vim.wo.number = true
 
 -- Vim Window Navigation
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true })
