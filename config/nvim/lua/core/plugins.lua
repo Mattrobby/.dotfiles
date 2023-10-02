@@ -18,11 +18,19 @@ require("lazy").setup({
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'navarasu/onedark.nvim',
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   'nvim-treesitter/nvim-treesitter',
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.3',
-      dependencies = { 'nvim-lua/plenary.nvim' }
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+  },
+  {
+    'nvim-telescope/telescope.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' }
   },
 
   -- LSP
