@@ -18,6 +18,7 @@ require("lazy").setup({
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'navarasu/onedark.nvim',
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   'nvim-treesitter/nvim-treesitter',
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.3',
@@ -34,4 +35,7 @@ require("lazy").setup({
   'hrsh7th/cmp-nvim-lsp',
   'L3MON4D3/LuaSnip',
   'rafamadriz/friendly-snippets',
+
+  -- Artificial Inteligence
+  'github/copilot.vim',
 })
