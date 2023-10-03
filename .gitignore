@@ -1,0 +1,6 @@
+# Ignore everything in the folder
+config/tmux/packages/*
+
+# But do not ignore the tpm folder
+!config/tmux/packages/tpm
+
