@@ -12,15 +12,28 @@ alias yay='paru'
 alias copy='xclip -sel c < '
 
 update() {
-  echo '\n======>  Updating Pacman <======\n'
+  center_text() {
+    local screen_width=$(tput cols)
+    local text="$1"
+    local text_length=${#text}
+    local padding_length=$(( (screen_width - text_length) / 2 - 5 )) # Calculate padding
+    local padding=$(printf '=%.0s' $(seq 1 $padding_length)) # Create '=' padding
+
+    echo "${padding}===> $text <===${padding}" # Print with padding
+  }
+  
+  center_text "Updating Pacman"
   sudo pacman -Syu --noconfirm
 
-  echo '\n======>   Updating AUR   <======\n'
+  echo
+  center_text "Updating AUR"
   paru -Syu --noconfirm
 
-  echo '\n======> Updating Flatpak <======\n'
+  echo
+  center_text "Updating Flatpak"
   sudo flatpak update -y
 }
+
 
 # Terminal text editor
 alias vim='nvim'
@@ -28,8 +41,8 @@ alias vi='/bin/vim'
 alias v='nvim'
 
 # Tmux
-alias tmux-new='tmux new-session -s'
 alias tmux-attach='tmux a -t'
+alias tmux-new='tmux new-session -v -s "${1:-$(basename $PWD)}"'
 
 # Python
 alias p='python3'
