@@ -51,11 +51,13 @@ alias venv='source .venv/bin/activate'
 # OneDrive
 alias onedrive-sync='onedrive --synchronize'
 
+# Other 
+alias cat='bat'
+
 # Git
 alias add='git add'
 alias push='git push'
 alias pull='git pull'
-alias cat='bat'
 
 commit() {
 	git add . 
