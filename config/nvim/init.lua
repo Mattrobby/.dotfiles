@@ -1,6 +1,2 @@
-require('core.keymaps')
-require('core.plugins')
-require('core.plugin_config')
-
--- Enable clipboard support
-vim.opt.clipboard = 'unnamedplus'
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
