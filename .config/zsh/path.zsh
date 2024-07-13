@@ -1,2 +1,3 @@
 export PATH="$HOME/.local/bin:$PATH"
-source /usr/share/nvm/init-nvm.sh' >> ~/.bashrc
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+source /usr/share/nvm/init-nvm.sh >> ~/.bashrc
