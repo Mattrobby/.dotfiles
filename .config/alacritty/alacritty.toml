@@ -1,19 +1,57 @@
-font:
-  normal:
-    family: monospace
-    style: Regular
+[[colors.indexed_colors]]
+color = "0x000000"
+index = 16
 
-  bold:
-    family: monospace
-    style: Bold
+[colors.bright]
+black = "0x5c6370"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0xe6efff"
+yellow = "0xd19a66"
 
-  italic:
-    family: monospace
-    style: Italic
+[colors.dim]
+black = "0x1e2127"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0x828791"
+yellow = "0xd19a66"
 
-  bold_italic:
-    family: monospace
-    style: Bold Italic
+[colors.normal]
+black = "0x1e2127"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0x828791"
+yellow = "0xd19a66"
 
-  size: 11
+[colors.primary]
+background = "0x1e2127"
+bright_foreground = "0xe6efff"
+foreground = "0xabb2bf"
 
+[env]
+TERM = "xterm-256color"
+
+[font.bold]
+family = " Comic Code Nerdfont"
+style = "Bold"
+
+[font.bold_italic]
+family = " Comic Code Nerdfont"
+style = "Bold Italic"
+
+[font.italic]
+family = " Comic Code Nerdfont"
+style = "Italic"
+
+[font.normal]
+family = "Comic Code Nerdfont"
+style = "Regular"
