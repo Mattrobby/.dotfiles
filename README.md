@@ -29,7 +29,7 @@ sudo apt install git stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-git clone --recurse-submodules git@github.com:Mattrobby/.dotfiles.git
+git clone --recurse-submodules https://github.com/Mattrobby/.dotfiles.git
 cd .dotfiles
 ```
 
